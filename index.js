@@ -20,22 +20,27 @@ function printPrime() {
 
 function loop(n) {
 
-    for (let i = 2; i < n; i++) {
+    for (let i = 2; i <= n; i++) {
         if (checkPrime(i)) {
-            console.log(i)
+            keepPrime.push(i)
         }
     }
 }
 
 
 function checkPrime(n) {
-    for (let i = 2; i < n; i++) {
+    for (let i = 2; i <= n; i++) {
+        if (n === 2) {
+            return true;
+        }
         if (n % i === 0) {
             return false;
         }
         return true;
     }
 }
+
+// function showPrime()
 
 
 
