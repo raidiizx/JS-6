@@ -35,7 +35,7 @@ function checkPrime(n) {
 }
 
 //This fuction have made for show prime number from array
-// function showPrime() 
+function showPrime() //this fuction is not available for now it should be able to deploy before 28/7/67
 
 
 
