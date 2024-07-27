@@ -1,47 +1,41 @@
-//create array 'keepPrime' to get prime number and print in the end
-//create an input to get n
-//create function 'checkPrime'  .This fuction can check that number is prime or not if true push to keepPrime
-//create function 'loop'        .This fuction was create to loop from 2 to n
-//create function 'printPrime'  .
-
-//on function checkPrime have to take n from input 
-//  create const 'l' to take numbers from input   
+//create array for keep prime number from loop fuction
 let keepPrime = [];
 
+//this fuction made for get value and send to loop fuction
 function printPrime() {
-    let n = document.getElementById('takenumbers').value
-    n = parseInt(n);
-    if (n === "" || n <= 2) {
+    let n = document.getElementById('takenumbers').value //this line create parameter n and keep value from method getElementByID
+    n = parseInt(n); //this line change type of parameter n from string to int by method parseint
+    if (n === "" || n <= 2) { //this line is in case that user enter number lower than 2 or the form is empyty and click button the alert will appear on user screen
         alert('Please enter number greater or equal 2');
     } else {
-        loop(n)
+        loop(n) //and if user enter number equal 2 or greater it'll call loop fuction and give agurement n from the form that user enter 
     }
 }
-
+//this fuction made for loop number 2 to n and called checkPrime fuction 
 function loop(n) {
-
-    for (let i = 2; i <= n; i++) {
-        if (checkPrime(i)) {
-            keepPrime.push(i)
+    for (let i = 2; i <= n; i++) { //this line we used to loop number from 2 to n 
+        if (checkPrime(i)) { //this line we called fuction checkPrime and give i agurement to this fuction
+            keepPrime.push(i);// this line we keep prime number that return from checkprime function
         }
     }
 }
 
-
+// take agurement "n" for check that n is prime or not 
+// 1.prime = true
+// 2.prime = false
 function checkPrime(n) {
-    for (let i = 2; i <= n; i++) {
-        if (n === 2) {
-            return true;
-        }
+    // n will be prime number if can divide by 1 and itself
+    //loop number 2 --> n-1
+    for (let i = 2; i < n; i++)   // we get 2 --> n-1 to modular n
         if (n % i === 0) {
             return false;
         }
-        return true;
-    }
+    //from below is all number is mudular and not equal to 0 that's mean n is prime number
+    return true;
 }
 
-// function showPrime()
-
+//This fuction have made for show prime number from array
+// function showPrime() 
 
 
 
