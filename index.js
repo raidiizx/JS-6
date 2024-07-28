@@ -1,6 +1,4 @@
-//create array for keep prime number from loop fuction
-let keepPrime = [];
-
+let keepPrime = []; //create array for keep prime number from loop fuction 
 //this fuction made for get value and send to loop fuction
 function printPrime() {
     let n = document.getElementById('takenumbers').value //this line create parameter n and keep value from method getElementByID
@@ -10,6 +8,7 @@ function printPrime() {
     } else {
         loop(n) //and if user enter number equal 2 or greater it'll call loop fuction and give agurement n from the form that user enter 
     }
+    showPrime()
 }
 //this fuction made for loop number 2 to n and called checkPrime fuction 
 function loop(n) {
@@ -35,7 +34,13 @@ function checkPrime(n) {
 }
 
 //This fuction have made for show prime number from array
-function showPrime() //this fuction is not available for now it should be able to deploy before 28/7/67
+function showPrime() {   //this fuction is not available for now it should be able to deploy before 28/7/67
+    let print = document.getElementById('showPrime');
+    print.innerHTML = "";
+    print.innerHTML = `(${keepPrime})`;
+}
+
+
 
 
 
