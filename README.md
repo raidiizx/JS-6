@@ -50,8 +50,8 @@
 | Defect ID | Title/Description                                                     | Severity | Status | Owner    | Comments            |
 | --------- | --------------------------------------------------------------------  | -------- | ------ | -------- | ------------------- |
 | DEF-001   | invalid email domain user can login                                   | High     | Open   | Dev Team | Needs investigation |
-| DEF-002   | Login is blocked but error message is "ไม่สามารถเข้าสู่ระบบได้ (AUTH-01)"   | High     | Open   | Dev Team |                     |
-|           | instead of "Account banned"                                           |          |        |          |                     |
+| DEF-002   | Login is blocked but error message is "ไม่สามารถเข้าสู่ระบบได้ (AUTH-01)" instead of "Account banned"   | High     | Open   | Dev Team |                     |
+
 
 ## 5. Observations & Recommendations
 
