@@ -2,7 +2,7 @@
 
 **Project:** Jasmine  
 **Commit:** [1845098ccd63f54f979228961102fd46cabd5b74]  
-**Prepared by:** [Tester Name]  
+**Prepared by:** [Ak4tsuki]  
 **Test Cases:** [Test Cases Commit]  
 **Date:** [September 3rd 2025]
 
@@ -16,7 +16,7 @@
 
 ## 1.1 September 3rd 2025 
 
-- **Total Test Cases:** ['32']
+- **Total Test Cases:** ['42']
 - **Executed:** [Number]
 - **Passed:** [Number]
 - **Failed:** [Number]
