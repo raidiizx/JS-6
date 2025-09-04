@@ -16,10 +16,10 @@
 
 ## 1.1 September 3rd 2025 
 
-- **Total Test Cases:** ['42']
-- **Executed:** [Number]
-- **Passed:** [Number]
-- **Failed:** [Number]
+- **Total Test Cases:** ['76']
+- **Executed:** [75]
+- **Passed:** [62]
+- **Failed:** [13]
 - **Await** [1] 
 - **Pass Rate:** [...%]
 
@@ -49,7 +49,7 @@
 | ----- | ------------------------                    | ------ | --------- | ---------------------                  |
 | TC01  | Login with valid KKU SSO                    | Passed |           |                                        |
 | TC02  | Login with invalid email domain             | Failed | DEF-001   | Google auth still redirect to dashbord.|
-| TC03  | Login with non-Faculty of Education user    | await  |           |                                        |
+| TC03  | Login with non-Faculty of Education user    | Await  |           |                                        |
 | TC04  | Banned user login                           | Failed | DEF-002   | Wrong error message.                   | 
 | TC05  | Session timeout                             | Passed |           |                                        | 
 | TC06  | Role-based access                           | Passed |           |                                        | 
@@ -71,7 +71,7 @@
 | TC22  | Add master data (e.g., department, position)| Passed |           |                                        | 
 | TC23  | Edit master data                            | Passed |           |                                        | 
 | TC24  | Delete master data with dependencies        | Failed | DEF-006   | Sub department deletable               | 
-| TC25  | Import valid master data CSV                | Failed | DEF-005   | No success uploaded message is shown   | 
+| TC25  | Import valid master data CSV                | Failed | DEF-007   | No success uploaded message is shown   | 
 | TC26  | Import master data with missing references  | Passed |           |                                        | 
 | TC27  | Create plan                                 | Passed |           |                                        | 
 | TC28  | Read plan                                   | Passed |           |                                        | 
@@ -97,13 +97,13 @@
 | TC48  | Unique code/name validation                 | Passed |           |                                        | 
 | TC49  | Link project to multiple OKRs               | Passed |           |                                        | 
 | TC50  | Unlink project from OKR                     | Passed |           |                                        | 
-| TC51  | Import valid project CSV                    | Failed | DEF-007   | Wrong UI shown.                        |
+| TC51  | Import valid project CSV                    | Passed |           |                                        |
 | TC52  | Import project with missing OKR             | Passed |           |                                        | 
 | TC53  | Create activity                             | Failed | DEF-008   | Order can be negative number.          | 
 | TC54  | Read activity                               | Passed |           |                                        | 
 | TC55  | Update activity                             | Passed |           |                                        | 
 | TC56  | Delete activity with no approvals/logs      | Passed |           |                                        | 
-| TC57  | Prevent activity deletion with approvals/logs        | Passed |           |                               | 
+| TC57  | Prevent activity deletion with approvals/logs        | Passed    |           |                            | 
 | TC58  | Unique order/name validation                | Failed | DEF-009   | validation failed.                     | 
 | TC59  | Create OKR                                  | Passed |           |                                        | 
 | TC60  | Read OKR                                    | Passed |           |                                        | 
@@ -111,11 +111,11 @@
 | TC62  | Delete OKR with no projects                 | Passed |           |                                        | 
 | TC63  | Prevent OKR deletion if linked to project   | Passed |           |                                        | 
 | TC64  | Edit OKR responsibility flags               | Passed |           |                                        | 
-| TC65  | Filter/search OKRs                          | Await  |           |  Don't see any search field or filter for okr.| 
+| TC65  | Filter/search OKRs                          | Failed | DEF-010   |  Don't see any search field or filter for okr.| 
 | TC66  | Activity budget entry                       | Passed |           |                                        | 
-| TC67  | Project budget calculation                  | Failed | DEF-010   |  No budget show.                       | 
-| TC68  | OKR budget calculation                      | Failed | DEF-011   |  No budget show.                       | 
-| TC69  | Tactic budget calculation                   | Failed | DEF-012   |  No budget show.                       | 
+| TC67  | Project budget calculation                  | Failed | DEF-011   |  No budget show.                       | 
+| TC68  | OKR budget calculation                      | Failed | DEF-012   |  No budget show.                       | 
+| TC69  | Tactic budget calculation                   | Failed | DEF-013   |  No budget show.                       | 
 | TC70  | Employee budget calculation                 | Passed |           |                                        | 
 | TC71  | Display quarterly budget totals             | Passed |           |                                        | 
 | TC72  | Strategy and tactic selector in add/edit project                                        | Passed |           |                                        | 
@@ -131,16 +131,18 @@
 | DEF-001   | invalid email domain user can login.                                  | High     | Open   | Dev Team | Needs investigation |
 | DEF-002   | Login is blocked but error message is "ไม่สามารถเข้าสู่ระบบได้ (AUTH-01)" instead of "Account banned"   | High     | Open   | Dev Team |                     |
 | DEF-003   | Employee can be create but position ID shouldn't be able to be negative number. | High  | Open   | Dev Team |                     |
-| DEF-004   | Email is validate but the warning message is not define to "Email must be unique" just show "ข้อมูลบุคลากรซ้ำกับที่มีอยู่ในระบบ" | High | Open   | Dev Team |                     |
+| DEF-004   | Email is validate but the warning message is not define to "Email must be unique" just show "ข้อมูลบุคลากรซ้ำกับที่มีอยู่ในระบบ" | High | Open  | Dev Team  | Needs investigation |        
 | DEF-005   | CSV file can be imported but there's no success message is shown.     | High     | Open   | Dev Team |                     |
-| DEF-006   | Sub department can be freely delete.                                  |  High    | Open   | Dev Team |                     |
-| DEF-007   | Data shown on UI from CSV file 'code' and 'name' columns is always determined by the 'code' column." |  High  | Open   | Dev Team |                     |
+| DEF-006   | Sub department can be freely delete.                                  | High    | Open   | Dev Team |                     |
+| DEF-007   | No success uploaded message is shown, but data from csv file can be imported normally |  High  | Open   | Dev Team |                     |
 | DEF-008   | On create activity the Activity order can be negative.                |  High    | Open   | Dev Team |                     |
-| DEF-009   | Can be create the activity with both name and order.                  |  High    | Open   | Dev Team |                     |
-| DEF-010   | There's no budget show in project details.(no UI)                     |  High    | Open   | Dev Team |                     |
-| DEF-011   | There's no budget show in OKR details.(no UI)                         |  High    | Open   | Dev Team |                     |
-| DEF-012   | There's no budget show in tactic details.(no UI)                      |  High    | Open   | Dev Team |                     |
+| DEF-009   | Can be create the activity with both name and order.(order/name not unique)  |  High    | Open   | Dev Team |                     |
+| DEF-010   | There's no search field or filter for OKR.                            |  Medium  | Open   | Dev Team |                     |
+| DEF-011   | There's no budget show in project details.(no UI)                     |  High    | Open   | Dev Team |                     |
+| DEF-012   | There's no budget show in OKR details.(no UI)                         |  High    | Open   | Dev Team |                     |
+| DEF-013   | There's no budget show in tactic details.(no UI)                      |  High    | Open   | Dev Team |                     |
 
+| DEF-007   | Data shown on UI from CSV file 'code' and 'name' columns is always determined by the 'code' column." |  High  | Open   | Dev Team |                     |
 ## 5. Observations & Recommendations
 
 - [Mostly minor UI error but still have some concern such as TC58, Google redirect all domain ,don't see any search/filter for okr.]
