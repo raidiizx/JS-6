@@ -1,10 +1,10 @@
 # Test Report
 
-**Project:** Jasmine  
-**Commit:** 1845098ccd63f54f979228961102fd46cabd5b74  
-**Prepared by:** Akatsuki 
-**Test Cases:** 808d7dadf3fafcd401659ecf01460c12b0001871
-**Date:** September 3rd 2025
+**Project :** Jasmine  
+**Commit :** 1845098ccd63f54f979228961102fd46cabd5b74  
+**Prepared by :** Akatsuki 
+**Test Cases :** 808d7dadf3fafcd401659ecf01460c12b0001871
+**Date :** September 3rd 2025
 
 ## 1. Summary
 
@@ -19,21 +19,21 @@
 
 - **Features Tested:**
 
-  - [Authentication & Access Control] 
-  - [User, Role, and Permission Management] 
-  - [Employee Management] 
-  - [Master Data Management]
-  - [Plan Management]
-  - [Strategy Management]
-  - [Tactic Management]
-  - [Project Management]
-  - [Activity Management]
-  - [OKR Management]
-  - [Budget Calculation and Display]
-  - [UI Requirements]
+  - Authentication & Access Control 
+  - User, Role, and Permission Management
+  - Employee Management
+  - Master Data Management
+  - Plan Management
+  - Strategy Management
+  - Tactic Management
+  - Project Management
+  - Activity Management
+  - OKR Management
+  - Budget Calculation and Display
+  - UI Requirements
 
 - **Features Not Tested / Deferred:**
-  - [Login with non-Faculty of Education user / don't know how]
+  - Login with non-Faculty of Education user / don't know how
 
 ## 3. Test Results
 
@@ -137,6 +137,6 @@
 | DEF-007   | Data shown on UI from CSV file 'code' and 'name' columns is always determined by the 'code' column." |  High  | Open   | Dev Team |                     |
 ## 5. Observations & Recommendations
 
-- [Mostly minor UI error but still have some concern such as TC58, Google redirect all domain ,don't see any search/filter for okr.]
+- Mostly minor UI error but still have some concern such as TC58, Google redirect all domain ,don't see any search/filter for okr.
 
 **Attachments:**
