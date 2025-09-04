@@ -141,11 +141,9 @@
 | DEF-011   | There's no budget show in OKR details.(no UI)                         |  High    | Open   | Dev Team |                     |
 | DEF-012   | There's no budget show in tactic details.(no UI)                      |  High    | Open   | Dev Team |                     |
 
-budget is sum of activity budgets, read-only.
-
 ## 5. Observations & Recommendations
 
-- [Summarize key findings, risks, and recommendations for next steps.]
+- [Mostly minor UI error but still have some concern such as TC58, Google redirect all domain ,don't see any search/filter for okr.]
 
 **Attachments:**
 
