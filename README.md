@@ -8,7 +8,7 @@
 
 ## 1. Summary
 
-- **Total Test Cases:** ['76']
+- **Total Test Cases:** [76]
 - **Executed:** [75]
 - **Passed:** [62]
 - **Failed:** [13]
