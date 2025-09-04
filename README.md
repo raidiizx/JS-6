@@ -8,20 +8,12 @@
 
 ## 1. Summary
 
-- **Total Test Cases:** [76]
-- **Executed:** [Number]
-- **Passed:** [Number]
-- **Failed:** [Number]
-- **Pass Rate:** [...%]
-
-## 1.1 September 3rd 2025 
-
 - **Total Test Cases:** ['76']
 - **Executed:** [75]
 - **Passed:** [62]
 - **Failed:** [13]
 - **Await** [1] 
-- **Pass Rate:** [...%]
+- **Pass Rate:** [82.67%]
 
 ## 2. Test Scope
 
@@ -41,7 +33,7 @@
   - [UI Requirements]
 
 - **Features Not Tested / Deferred:**
-  - [List any modules/features not tested, with reasons]
+  - [Login with non-Faculty of Education user / don't know how]
 
 ## 3. Test Results
 
@@ -148,5 +140,3 @@
 - [Mostly minor UI error but still have some concern such as TC58, Google redirect all domain ,don't see any search/filter for okr.]
 
 **Attachments:**
-
-- [Test logs, screenshots, defect reports, etc.]
