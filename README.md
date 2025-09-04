@@ -1,19 +1,19 @@
 # Test Report
 
 **Project:** Jasmine  
-**Commit:** [1845098ccd63f54f979228961102fd46cabd5b74]  
-**Prepared by:** [Akatsuki]  
-**Test Cases:** [808d7dadf3fafcd401659ecf01460c12b0001871]  
-**Date:** [September 3rd 2025]
+**Commit:** 1845098ccd63f54f979228961102fd46cabd5b74  
+**Prepared by:** Akatsuki 
+**Test Cases:** 808d7dadf3fafcd401659ecf01460c12b0001871
+**Date:** September 3rd 2025
 
 ## 1. Summary
 
-- **Total Test Cases:** [76]
-- **Executed:** [75]
-- **Passed:** [62]
-- **Failed:** [13]
-- **Await** [1] 
-- **Pass Rate:** [82.67%]
+- **Total Test Cases:** 76
+- **Executed:** 75
+- **Passed:** 62
+- **Failed:** 13
+- **Await** 1 
+- **Pass Rate:** 82.67%
 
 ## 2. Test Scope
 
