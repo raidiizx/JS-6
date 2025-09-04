@@ -2,13 +2,13 @@
 
 **Project:** Jasmine  
 **Commit:** [1845098ccd63f54f979228961102fd46cabd5b74]  
-**Prepared by:** [Ak4tsuki]  
-**Test Cases:** [Test Cases Commit]  
+**Prepared by:** [Akatsuki]  
+**Test Cases:** [808d7dadf3fafcd401659ecf01460c12b0001871]  
 **Date:** [September 3rd 2025]
 
 ## 1. Summary
 
-- **Total Test Cases:** ['76']
+- **Total Test Cases:** [76]
 - **Executed:** [Number]
 - **Passed:** [Number]
 - **Failed:** [Number]
@@ -34,6 +34,11 @@
   - [Plan Management]
   - [Strategy Management]
   - [Tactic Management]
+  - [Project Management]
+  - [Activity Management]
+  - [OKR Management]
+  - [Budget Calculation and Display]
+  - [UI Requirements]
 
 - **Features Not Tested / Deferred:**
   - [List any modules/features not tested, with reasons]
@@ -74,27 +79,71 @@
 | TC30  | Delete plan with no strategies              | Passed |           |                                        | 
 | TC31  | Prevent plan deletion with strategies       | Passed |           |                                        | 
 | TC32  | Clone plan                                  | Passed |           |                                        | 
-    .
-    .
-    .
+| TC33  | Create strategy                             | Passed |           |                                        | 
+| TC34  | Read strategy                               | Passed |           |                                        | 
+| TC35  | Update strategy                             | Passed |           |                                        | 
+| TC36  | Delete strategy with no tactics             | Passed |           |                                        | 
+| TC37  | Prevent strategy deletion with tactics      | Passed |           |                                        | 
+| TC38  | Create tactic                               | Passed |           |                                        | 
+| TC39  | Read tactic                                 | Passed |           |                                        | 
+| TC40  | Update tactic                               | Passed |           |                                        | 
+| TC41  | Delete tactic with no projects              | Passed |           |                                        | 
 | TC42  | Prevent tactic deletion with projects       | Passed |           |                                        | 
-
-    
-
-
+| TC43  | Create project                              | Passed |           |                                        | 
+| TC44  | Read project                                | Passed |           |                                        | 
+| TC45  | Update project                              | Passed |           |                                        | 
+| TC46  | Delete project with no activities           | Passed |           |                                        | 
+| TC47  | PPrevent project deletion with activities   | Passed |           |                                        | 
+| TC48  | Unique code/name validation                 | Passed |           |                                        | 
+| TC49  | Link project to multiple OKRs               | Passed |           |                                        | 
+| TC50  | Unlink project from OKR                     | Passed |           |                                        | 
+| TC51  | Import valid project CSV                    | Failed | DEF-007   | Wrong UI shown.                        |
+| TC52  | Import project with missing OKR             | Passed |           |                                        | 
+| TC53  | Create activity                             | Failed | DEF-008   | Order can be negative number.          | 
+| TC54  | Read activity                               | Passed |           |                                        | 
+| TC55  | Update activity                             | Passed |           |                                        | 
+| TC56  | Delete activity with no approvals/logs      | Passed |           |                                        | 
+| TC57  | Prevent activity deletion with approvals/logs        | Passed |           |                               | 
+| TC58  | Unique order/name validation                | Failed | DEF-009   | validation failed.                     | 
+| TC59  | Create OKR                                  | Passed |           |                                        | 
+| TC60  | Read OKR                                    | Passed |           |                                        | 
+| TC61  | Update OKR                                  | Passed |           |                                        | 
+| TC62  | Delete OKR with no projects                 | Passed |           |                                        | 
+| TC63  | Prevent OKR deletion if linked to project   | Passed |           |                                        | 
+| TC64  | Edit OKR responsibility flags               | Passed |           |                                        | 
+| TC65  | Filter/search OKRs                          | Await  |           |  Don't see any search field or filter for okr.| 
+<br>
+| TC66  | Activity budget entry                       | Passed |           |                                        | 
+| TC67  | Project budget calculation                  | Failed | DEF-010   |  No budget show.                       | 
+| TC68  | OKR budget calculation                      | Failed | DEF-011   |  No budget show.                       | 
+| TC69  | Tactic budget calculation                   | Failed | DEF-012   |  No budget show.                       | 
+| TC70  | Employee budget calculation                 | Passed |           |                                        | 
+| TC71  | Display quarterly budget totals             | Passed |           |                                        | 
+<br>
+| TC72  | Strategy and tactic selector in add/edit project                                        | Passed |           |                                        | 
+| TC73  | Display OKR target values in project/activity pages                                     | Passed |           |                                        | 
+| TC74  | Display employee budget, position budget, management position budget in employee pages  | Passed |           |                                        | 
+| TC75  | Display project code as activity code                                                   | Passed |           |                                        | 
+| TC76  | Employee name display with prefix and position type                                     | Passed |           |                                        | 
 
 ## 4. Defect Summary
 
 | Defect ID | Title/Description                                                     | Severity | Status | Owner    | Comments            |
 | --------- | --------------------------------------------------------------------  | -------- | ------ | -------- | ------------------- |
-| DEF-001   | invalid email domain user can login                                   | High     | Open   | Dev Team | Needs investigation |
+| DEF-001   | invalid email domain user can login.                                  | High     | Open   | Dev Team | Needs investigation |
 | DEF-002   | Login is blocked but error message is "ไม่สามารถเข้าสู่ระบบได้ (AUTH-01)" instead of "Account banned"   | High     | Open   | Dev Team |                     |
-| DEF-003   | Employee can be create but position ID shouldn't be able to be negative number | High  | Open   | Dev Team |                     |
+| DEF-003   | Employee can be create but position ID shouldn't be able to be negative number. | High  | Open   | Dev Team |                     |
 | DEF-004   | Email is validate but the warning message is not define to "Email must be unique" just show "ข้อมูลบุคลากรซ้ำกับที่มีอยู่ในระบบ" | High | Open   | Dev Team |                     |
-| DEF-005   | CSV file can be imported but there's no success message is shown      | High     | Open   | Dev Team |                     |
-| DEF-006   | Sub department can be freely delete                                   |          | Open   | Dev Team |                     |
+| DEF-005   | CSV file can be imported but there's no success message is shown.     | High     | Open   | Dev Team |                     |
+| DEF-006   | Sub department can be freely delete.                                  |  High    | Open   | Dev Team |                     |
+| DEF-007   | Data shown on UI from CSV file 'code' and 'name' columns is always determined by the 'code' column." |  High  | Open   | Dev Team |                     |
+| DEF-008   | On create activity the Activity order can be negative.                |  High    | Open   | Dev Team |                     |
+| DEF-009   | Can be create the activity with both name and order.                  |  High    | Open   | Dev Team |                     |
+| DEF-010   | There's no budget show in project details.(no UI)                     |  High    | Open   | Dev Team |                     |
+| DEF-011   | There's no budget show in OKR details.(no UI)                         |  High    | Open   | Dev Team |                     |
+| DEF-012   | There's no budget show in tactic details.(no UI)                      |  High    | Open   | Dev Team |                     |
 
-
+budget is sum of activity budgets, read-only.
 
 ## 5. Observations & Recommendations
 
