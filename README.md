@@ -103,7 +103,7 @@
 | TC54  | Read activity                               | Passed |           |                                        | 
 | TC55  | Update activity                             | Passed |           |                                        | 
 | TC56  | Delete activity with no approvals/logs      | Passed |           |                                        | 
-| TC57  | Prevent activity deletion with approvals/logs        | Passed |           |                               | 
+| TC57  | Prevent activity deletion with approvals/logs        | Passed    |           |                               | 
 | TC58  | Unique order/name validation                | Failed | DEF-009   | validation failed.                     | 
 | TC59  | Create OKR                                  | Passed |           |                                        | 
 | TC60  | Read OKR                                    | Passed |           |                                        | 
@@ -118,13 +118,13 @@
 | TC68  | OKR budget calculation                      | Failed | DEF-011   |  No budget show.                       | 
 | TC69  | Tactic budget calculation                   | Failed | DEF-012   |  No budget show.                       | 
 | TC70  | Employee budget calculation                 | Passed |           |                                        | 
-| TC71  | Display quarterly budget totals             | Passed |           |                                        | 
+| TC71  | Display quarterly budget totals             | Failed | DEF-013   |  Project details not show budget.      | 
 <br>
 | TC72  | Strategy and tactic selector in add/edit project                                        | Passed |           |                                        | 
 | TC73  | Display OKR target values in project/activity pages                                     | Passed |           |                                        | 
 | TC74  | Display employee budget, position budget, management position budget in employee pages  | Passed |           |                                        | 
 | TC75  | Display project code as activity code                                                   | Passed |           |                                        | 
-| TC76  | Employee name display with prefix and position type                                     | Passed |           |                                        | 
+| TC76  | Employee name display with prefix and position type                                     | Failed |           | prefix and position type is shown but name not include prefix | 
 
 ## 4. Defect Summary
 
@@ -142,6 +142,7 @@
 | DEF-010   | There's no budget show in project details.(no UI)                     |  High    | Open   | Dev Team |                     |
 | DEF-011   | There's no budget show in OKR details.(no UI)                         |  High    | Open   | Dev Team |                     |
 | DEF-012   | There's no budget show in tactic details.(no UI)                      |  High    | Open   | Dev Team |                     |
+| DEF-013   | There's no budget show in project details.(no UI)                     |  High    | Open   | Dev Team |                     |
 
 budget is sum of activity budgets, read-only.
 
