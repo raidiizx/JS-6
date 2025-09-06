@@ -132,7 +132,7 @@
 | DEF-006   | Sub department can be freely delete.                                  | High    | Open   | Dev Team |                     |
 | DEF-007   | No success uploaded message is shown, but data from csv file can be imported normally |  High  | Open   | Dev Team |                     |
 | DEF-008   | On create activity the Activity order can be negative.                |  High    | Open   | Dev Team |                     |
-| DEF-009   | Can be create the activity with both name and order.(order/name not unique)  |  High    | Open   | Dev Team |                     |
+| DEF-009   | Can be create the activity with both same name and order.(order/name not unique)  |  High    | Open   | Dev Team |                     |
 | DEF-010   | There's no search field or filter for OKR.                            |  Medium  | Open   | Dev Team |                     |
 | DEF-011   | There's no budget show in project details.(no UI)                     |  High    | Open   | Dev Team |                     |
 | DEF-012   | There's no budget show in OKR details.(no UI)                         |  High    | Open   | Dev Team |                     |
@@ -141,6 +141,6 @@
 | DEF-007   | Data shown on UI from CSV file 'code' and 'name' columns is always determined by the 'code' column." |  High  | Open   | Dev Team |                     |
 ## 5. Observations & Recommendations
 
-- Mostly minor UI error but still have some concern such as TC58, Google redirect all domain ,don't see any search/filter for okr.
+- Mostly minor UI error but still have some concern such as TC02, TC58 , TC65.
 
 **Attachments:**
