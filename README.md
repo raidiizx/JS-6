@@ -127,7 +127,7 @@
 | DEF-001   | invalid email domain user can login.                                  | High     | Open   | Dev Team | Needs investigation |
 | DEF-002   | Login is blocked but error message is "ไม่สามารถเข้าสู่ระบบได้ (AUTH-01)" instead of "Account banned"   | High     | Open   | Dev Team |                     |
 | DEF-003   | Employee can be create but position ID shouldn't be able to be negative number. | High  | Open   | Dev Team |                     |
-| DEF-004   | Email is validate but the warning message is not define to "Email must be unique" just show "ข้อมูลบุคลากรซ้ำกับที่มีอยู่ในระบบ" | High | Open  | Dev Team  | Needs investigation |        
+| DEF-004   | Email is validate but the warning message is not define to "Email must be unique" just show "ข้อมูลบุคลากรซ้ำกับที่มีอยู่ในระบบ" | High | Open  | Dev Team  |   |        
 | DEF-005   | CSV file can be imported but there's no success message is shown.     | High     | Open   | Dev Team |                     |
 | DEF-006   | Sub department can be freely delete.                                  | High    | Open   | Dev Team |                     |
 | DEF-007   | No success uploaded message is shown, but data from csv file can be imported normally |  High  | Open   | Dev Team |                     |
