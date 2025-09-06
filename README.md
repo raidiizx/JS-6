@@ -138,9 +138,10 @@
 | DEF-012   | There's no budget show in OKR details.(no UI)                         |  High    | Open   | Dev Team |                     |
 | DEF-013   | There's no budget show in tactic details.(no UI)                      |  High    | Open   | Dev Team |                     |
 
-| DEF-007   | Data shown on UI from CSV file 'code' and 'name' columns is always determined by the 'code' column." |  High  | Open   | Dev Team |                     |
 ## 5. Observations & Recommendations
 
 - Mostly minor UI error but still have some concern such as TC02, TC58 , TC65.
 
 **Attachments:**
+
+- 
